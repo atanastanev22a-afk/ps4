@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche | The Ultimate Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <h1 class="preloader-text">PORSCHE</h1>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="#" class="logo">PORSCHE</a>
+        <button class="lang-toggle" aria-label="Toggle Language">BG</button>
+        <button class="burger-menu" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <div class="slide-menu">
+        <a href="#" class="menu-link" data-en="HOME" data-bg="НАЧАЛО">HOME</a>
+        <a href="#models" class="menu-link" data-en="CARS" data-bg="АВТОМОБИЛИ">CARS</a>
+        <a href="#creators" class="menu-link" data-en="CREATORS" data-bg="СЪЗДАТЕЛИ">CREATORS</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1503376713919-8669438992e1?auto=format&fit=crop&q=80&w=2000');"></div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal-text" data-en="Unleash" data-bg="Освободи">Unleash</h1>
+            <h1 class="hero-title reveal-text delay-1" data-en="The Beast." data-bg="Звяра.">The Beast.</h1>
+            <p class="hero-subtitle reveal-text delay-2" data-en="Experience engineering perfection." data-bg="Изживей инженерното съвършенство.">Experience engineering perfection.</p>
+        </div>
+        <div class="hero-car">
+            <img src="car1.png" alt="Porsche Car" class="car-image" id="carImage">
+            <button class="car-nav-btn car-nav-left" aria-label="Previous car">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="car-nav-btn car-nav-right" aria-label="Next car">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+        <div class="scroll-indicator" data-en="Scroll to discover" data-bg="Превърти, за да откриеш">Scroll to discover</div>
+    </section>
+
+    <!-- The Fleet Section -->
+    <section id="models" class="fleet">
+        <h2 class="section-title fade-up" data-en="The Fleet" data-bg="Автопаркът">The Fleet</h2>
+        <div class="fleet-container">
+            <div class="fleet-card" style="animation-delay: 0s;">
+                <div class="fleet-image-wrapper">
+                    <img src="cc1.png" alt="Porsche 911 Turbo S">
+                </div>
+                <div class="fleet-info"><p data-en="Porsche 911 Turbo S" data-bg="Porsche 911 Turbo S">Porsche 911 Turbo S</p></div>
+            </div>
+            <div class="fleet-card" style="animation-delay: 0.1s;">
+                <div class="fleet-image-wrapper">
+                    <img src="cc2.png" alt="Porsche Cayman GT4 RS">
+                </div>
+                <div class="fleet-info"><p data-en="Porsche Cayman GT4 RS" data-bg="Porsche Cayman GT4 RS">Porsche Cayman GT4 RS</p></div>
+            </div>
+            <div class="fleet-card" style="animation-delay: 0.1s;">
+                <div class="fleet-image-wrapper">
+                    <img src="cc3.png" alt="Porsche 918 Spyder">
+                </div>
+                <div class="fleet-info"><p data-en="Porsche 918 Spyder" data-bg="Porsche 918 Spyder">Porsche 918 Spyder</p></div>
+            </div>
+            <div class="fleet-card" style="animation-delay: 0.2s;">
+                <div class="fleet-image-wrapper">
+                    <img src="cc4.png" alt="Porsche 911 GT3 RS">
+                </div>
+                <div class="fleet-info"><p data-en="Porsche 911 GT3 RS" data-bg="Porsche 911 GT3 RS">Porsche 911 GT3 RS</p></div>
+            </div>
+            <div class="fleet-card" style="animation-delay: 0.2s;">
+                <div class="fleet-image-wrapper">
+                    <img src="cc5.png" alt="Porsche 911 GT2 RS">
+                </div>
+                <div class="fleet-info"><p data-en="Porsche 911 GT2 RS" data-bg="Porsche 911 GT2 RS">Porsche 911 GT2 RS</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creators Section -->
+    <section id="creators" class="creators">
+        <h2 class="creators-title" data-en="CREATORS OF THIS PROJECT" data-bg="СЪЗДАТЕЛИ НА ПРОЕКТА">CREATORS OF THIS PROJECT</h2>
+        <div class="creators-cards">
+            <div class="creator-card">
+                <div class="creator-content">
+                    <h3 class="creator-name" data-en="Denis Uichev" data-bg="Денис Уйчев">Denis Uichev</h3>
+                    <p class="creator-desc" data-en="Documentation and ASP.NET" data-bg="Документация и ASP.NET">Documentation and ASP.NET</p>
+                </div>
+            </div>
+            <div class="creator-card">
+                <div class="creator-content">
+                    <h3 class="creator-name" data-en="Atanas Tanev" data-bg="Атанас Танев">Atanas Tanev</h3>
+                    <p class="creator-desc" data-en="HTML/CSS/JS and ASP.NET" data-bg="HTML/CSS/JS и ASP.NET">HTML/CSS/JS and ASP.NET</p>
+                </div>
+            </div>
+            <div class="creator-card">
+                <div class="creator-content">
+                    <h3 class="creator-name" data-en="Daniel Georgiev" data-bg="Даниел Георгиев">Daniel Georgiev</h3>
+                    <p class="creator-desc" data-en="Documentation and ASP.NET" data-bg="Документация и ASP.NET">Documentation and ASP.NET</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="logo">PORSCHE</a>
+        <p data-en="&copy; 2026 Porsche Experiences. All rights reserved." data-bg="&copy; 2026 Porsche Experiences. Всички права запазени.">&copy; 2026 Porsche Experiences. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
